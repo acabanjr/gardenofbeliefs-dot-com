@@ -240,7 +240,7 @@ section.show {
 
 
 /* Mobile styling */
-@media screen and (max-width: 500px) {
+@media (max-width: 768px) {
 
  body {
   width: 100%;
