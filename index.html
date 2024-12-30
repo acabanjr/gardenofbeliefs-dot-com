@@ -1,120 +1,108 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Garden of Beliefs</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><br>
+        img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+            border: 1px solid grey;
+            margin-top: 20px;
+        }
 
-<link rel="stylesheet" type="text/css" href="./style.css">
+        .synopsis-container {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .bold-text {
+            font-weight: bold;
+        }
+
+        .italic-text {
+            font-style: italic;
+        }
+
+        .bold-centered {
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .check-back {
+            font-weight: bold;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .amazon-link img {
+            max-width: 425px;
+            border: none;
+            margin-top: 20px;
+        }
+
+        .buy-link {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #000000;
+            text-decoration: none;
+        }		
+
+        .buy-link:hover {
+            color: #a2a863;
+        }		
+		
+        /* Media query for mobile screens */
+        @media (max-width: 768px) {
+            img {
+                margin-top: 0;
+            }
+
+            .synopsis-container {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-<title>The Garden of Beliefs</title>
-
-<header>
-  <a href="https://www.amazon.com/dp/B0DJLT1QNB" target="_blank">
-  <img src="./image/banner.jpg" alt="The Garden of Beliefs" style="width: 100%; height: auto;"></a>
-</header>
-
-
-<main>
-<section class="content left">
-  <p class="highlight">A heartwarming tale of friendship, understanding, and celebrating differences.</p>
-</section>
-
-
-<section class="content right">
-  <div class="book-mockup">
-	<div class="book-details">
-		<img src="./image/book.png" alt="Book Mockup" class="book-image">
-		Daisy the Daffodil embarks on a journey through a magical garden where every flower represents a unique belief. From creativity to optimism, each flower claims their belief is best, leading to division in the once harmonious garden. With the gentle wisdom of two ancient trees, Daisy helps the flowers discover the power of acceptance and unity, and the garden blooms brighter than ever before.
-	</div>
-  </div>
-</section>
-
-
-<section class="content left">
-<div class="image-gallery4">
-
-  <div class="image-item">
-	<img src="./image/module_tommy.jpg" alt="Tommy Tulip">
-	<p class="highlight">Tommy Tulip</p>
-	<p class="caption">A Tulip who believes in creativity. He spends his days painting vibrant colors and stunning landscapes.</p>
-  </div>
-
-  <div class="image-item">
-	<img src="./image/module_rebecca.jpg" alt="Rebecca Rose">
-	<p class="highlight">Rebecca Rose</p>
-	<p class="caption">A Rose who cherishes love and compassion. Always available to listen attentively and offer comfort to their fellow flowers.</p>
-  </div>
-
-  <div class="image-item">
-	<img src="./image/module_stacy.jpg" alt="Stacy Sunflower">
-	<p class="highlight">Stacy Sunflower</p>
-	<p class="caption">A Sunflower who values optimism. Her cheerful demeanor brightens the garden, and she spreads positivity wherever she goes.</p>
-  </div>
-
-  <div class="image-item">
-	<img src="./image/module_daisy.jpg" alt="Daisy Daffodil">
-	<p class="highlight">Daisy Daffodil</p>	
-	<p class="caption">A Daffodil who believes in harmony and peace. She thinks her perspective is the key to maintaining balance in the garden.</p>
-  </div>
-
-</div>
-</section>	
-
-
-<section class="content right">
-  <p class="highlight">In this garden, all sorts of flowers flourish, each representing the beliefs and ideas of the village. It is a colorful and diverse place.</p>				
-</section>	
-
-
-<section class="content left">
-<div class="image-gallery2">
-
-  <div class="image-item">
-	<img src="./image/module_willy.jpg" alt="Wise Willow Willy">
-	<p class="highlight">Wise Willow Willy</p>
-	<p class="caption">An ancient smile of tales untold and wisdom's gold, Wise Willow Willy smiled, with a twinkle in their eye, Well defined, timeless in heart and of mind.</p>
-  </div>
-
-  <div class="image-item">
-	<img src="./image/module_oatly.jpg" alt="Kind Oak Oatley">
-	<p class="highlight">Kind Oak Oatley</p>
-	<p class="caption">With branches like arms, and leaves like whispers, gently asway, sharing kindness and wisdom, both by night and by day. With roots that run deep, they have been grounded for long, a symbol of life standing tall, upright, and strong.</p>
-  </div>
-
-</div>
-</section>
-
-<hr>
-
-<section class="content right">
-  <div class="amazon-link">
-	<a href="https://www.amazon.com/dp/B0DJLT1QNB" target="_blank">
-	<img src="image/amazon.png" alt="Buy on Amazon"></a>
-    <p><a href="https://www.amazon.com/dp/B0DJLT1QNB" target="_blank" class="text-link">Get Your Own Copy Now!</a></p>
-  </div>
-</section>
-
-<hr>	
-
-<section class="content left">
-  <div class="about-author"><h2>About the Author</h2>
-	<div class="author-content"><img src="./image/avatar_acabanjr.jpg" alt="Andrés Cabán Jr." class="author-photo">
-	  <div class="author-details"><h3>Andrés Cabán Jr.</h3>
-		<blockquote>"As a kid, I had a book full of 'My Inventions,' a binder divided into various categories. It was full of my ideas. Detailed mock-ups ranging from clothing designs to video game concepts, and even blueprints for skyscrapers. I've always been creative and even more so, organized. These adjectives define my character and guide my approach to even the smallest details."</blockquote><br>
-
-		<p>Andrés has always been drawn to creative pursuits. His combination of imagination and meticulous organization has shaped both his career and personal journeys. His passion for writing began in his teenage years, fueled by poetry and a love for essays. Though writing a book has been a long-held goal, it wasn’t until recently that the idea for a children’s book took root. After careful thought, especially regarding the illustrations, Andrés is proud to share his debut children’s book, <em>The Garden of Beliefs</em>, blending his love for storytelling with visual art.</p>
-	  </div>
-	</div>
-  </div>
-</section>
-</main>
-
-<footer class="site-footer">&copy; cabán creatives group</footer>
-
-<script src="script.js"></script>
+    <img src="image/banner.png" alt="The Garden of Beliefs Banner">
+    <div class="synopsis-container">
+        <p class="bold-text">A heartwarming tale of friendship, understanding, and celebrating differences.</p>
+        <p class="italic-text">In this garden, all sorts of flowers flourish, each representing the beliefs and ideas of the village. It is a colorful and diverse place.</p>
+        <p>
+            Daisy the Daffodil embarks on a journey through a magical garden where every flower represents a unique belief. 
+            From creativity to optimism, each flower claims their belief is best, leading to division in the once harmonious garden. 
+            With the gentle wisdom of two ancient trees, Daisy helps the flowers discover the power of acceptance and unity, 
+            and the garden blooms brighter than ever before.
+        </p>
+                
+        <!-- Amazon image with link -->
+        <a href="https://www.amazon.com/dp/B0DJLT1QNB" target="_blank" class="amazon-link">
+            <img src="image/amazon.png" alt="Buy on Amazon">
+        </a>
+		
+		<!-- Click to buy link -->
+        <a href="https://www.amazon.com/dp/B0DJLT1QNB" target="_blank" class="buy-link">Click to Buy</a>
+		
+    </div>
 </body>
 </html>
