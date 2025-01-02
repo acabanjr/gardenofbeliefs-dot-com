@@ -241,64 +241,7 @@ section.show {
 
 /* Mobile styling */
 @media (max-width: 768px) {
-
- body {
-  width: 100%;
-  font-size: 18px;
-  line-height: 1.2;
+  body {
+    background-color: lightblue; /* A visible change */
   }
-
-header img {
-  width: 100%;
-  height: auto;
-  }
-
-.highlight {
-  font-size: 16px;
-  }	
-
-
-/* ----- Book Mockup ----- */
-.book-details {
-  flex-direction: column; /* Stack the book image and text vertically on smaller screens */
-  gap: 10px;
-  }
-
-.book-image {
-  max-width: 100%;
-  height: auto;
-  }
-
-
-/* ----- Four Column Gallery ----- */
-.image-gallery4 {
-  grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
-  }
-
-.caption {
-  text-align: left;
-}
-
-
-/* ----- Amazon Buy Link ----- */
-.amazon-link img {
-  max-width: 70%;
-}
-
-.text-link {
-  font-size: 16px;
-}
-
-
-/* ----- About The Author ----- */
-.author-content {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  }
-
-  .author-details {
-    text-align: center;
-  }
-
 }
